@@ -35,11 +35,6 @@
     <div class="row">
       <div class="column" style="margin-top:10%">
 
-        <h4>WatchOS 4 Update</h4>
-        <p>I have the app functioning under WatchOS 4. If you have WatchOS 4 beta installed and would like to test it, please email me. My plan is to have the update in the App Store no later than a week after WatchOS 4 is released by Apple.</p>
-
-        <hr/>
-
         <h2>
         <div>
             <img src="images/iTunesArtwork@1x.png" class="u-max-full-width" width="60" style="vertical-align:middle; border-radius: 10px">
@@ -47,43 +42,46 @@
             </div>
         </h2>
 
-        <p><strong>Finally, you can go for a workout and leave your iPhone behind!</strong><p>
+        <p><strong>A podcast app designed for standalone playback on the Apple Watch</strong><p>
         <ul>
-            <li>Copy podcasts to your Apple Watch and listen through its speaker or bluetooth headphones</li>
+            <li>Copy podcasts to your Apple Watch and listen through bluetooth headphones directly from your watch</li>
+            <li>Leave your phone behind on your workouts</li>
             <li>Podcasts play in the background while you track your workout with your favorite app</li>
             <li>Use the iOS app to subscribe to podcasts, download episodes and transfer to your watch</li>
-            <li>Playback progress is shared between your phone and watch so you can seamlessly resume listening where you left off</li>
         <br/>
-        <p>Contact: <a href="mailto:watchcastapp@gmail.com">watchcastapp@gmail.com</a></p>
-        <p><a href="https://twitter.com/appwatchcast" class="twitter-follow-button" data-show-count="false">Follow @appwatchcast</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-        <p><a href="https://itunes.apple.com/app/watchcast-store-and-play-podcasts-on-your-watch/id1207662678?mt=8"><img src="images/appstore.png"></a></p>
+        <p>Contact: 
+            
+            <p><i>I have been receiving <strong>a lot</strong> of emails since the release of WatchOS 4, and haven't been able to reply to everyone. I am slowly working through them.</i></p>
+            <p><a href="mailto:watchcastapp@gmail.com">watchcastapp@gmail.com</a></p>
+            <p><a href="https://twitter.com/appwatchcast" class="twitter-follow-button" data-show-count="false">Follow @appwatchcast</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+            <p><a href="https://itunes.apple.com/app/watchcast-store-and-play-podcasts-on-your-watch/id1207662678?mt=8"><img src="images/appstore.png"></a></p>
+        </p>
         </div>
     </div>
 
     <hr/>
 
     <div>
-        <h4>FAQ</h4>
+        <h4>FAQ (for WatchOS 4)</h4>
 
-        <div><strong>Why is the volume low on the watch?</strong></div>
-        <div>Apple does not let developers change the system volume directly.  To get max volume:</div>
-        <div>
+        <div><strong>Why won't podcasts transfer to my watch?</strong></div>
+        <div>When you transfer a podcast, it should immediately show up in the watch app starting at 0%. If that doesn't happen, keep the watch app open, then cancel and restart the transfer from your phone.</div>
+        <div>To cancel a transfer:
             <ul>
-                <li>Increase the app volume using the slider at the bottom of the playback screen.</li>
-                <li>If you're using a bluetooth headset with a volume button, use it to increase the system volume.</li>
-                <li>If you're using AirPods or another headset without a volume button, do the following:
-                <ul>
-                    <li>Open the music app and play a song</li>
-                    <li>Set the volume to max in the "Now Playing" app</li>
-                    <li>Now when you return to play a podcast, the volume should be higher</li>
-                </ul>
+                <li>On your phone, in the app, select the Watch tab</li>
+                <li>Swipe left on the transfer to cancel it</li>
             </ul>
         </div>
+        
+        <br/>
 
-        <div><strong>Why is my transfer stuck at 0%?</strong></div>
+        <div><strong>Why is my transfer stuck at X%?</strong></div>
         <div>Your watch tries to decide the best time to transfer data to preserve power.  Low battery (on your watch or phone) and/or poor network connectivity decrease the amount of time given to the transfer, so charge your devices and get closer to a wifi router. Also keep in mind that downloads will continue in the background.<br/><br/>Your best bet is to set up autodownloading and autosyncing so a relevant podcast will always be ready on your watch.</div>
+        <br/>
 
-        </br>
+        <div><strong>Why is the watch app losing track of my playback progress?</strong></div>
+        <div>This is an unfortunate consequence of changes Apple made in WatchOS 4. The available API does not make it easy or reliable to track progress because it does not wake the app up to report changes in playback progress. Opening the app on the watch during playback <i>should</i> keep things in sync, but it will occassionally fail.</div>
+        <br/>
 
         <div><strong>How do I complete the in-app purchase?</strong></div>
         <div>The app is free to use with all features unlocked for up to two podcasts. You will be prompted to make the purchase after subscribing to a third podcast.  Thanks!</div>
